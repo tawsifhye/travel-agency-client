@@ -2,17 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth'
+import logo from '../../images/logo.jpg'
 import "./Header.css"
 const Header = () => {
     const { user, logOut } = useAuth();
+    console.log(user);
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light sticky-top self-navbar d-flex justify-content-end align-items-center self-nav">
+            <nav className="navbar navbar-expand-lg navbar-light sticky-top self-navbar  self-nav">
                 <div className="container w-50 ms-0 ps-3">
                     <Link to="/home">
                         <img
                             className="rounded-circle"
-                            src=''
+                            src={logo}
                             alt=""
                             width="100"
                             height="81"
@@ -32,10 +34,10 @@ const Header = () => {
                 </button>
                 <div className="container-fluid d-flex">
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto pe-lg-5 mb-2 mb-lg-0 fw-bold fs-5">
+                        <ul className="navbar-nav ms-auto pe-lg-5 mb-2 mb-lg-0 fw-bold fs-6">
                             <li className="nav-item">
                                 <HashLink
-                                    className="nav-link active text-white
+                                    className="nav-link active 
                                 link-hover"
                                     aria-current="page"
                                     to="/home#home"
@@ -45,7 +47,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <HashLink
-                                    className="nav-link active text-white
+                                    className="nav-link active 
                                 link-hover"
                                     aria-current="page"
                                     to="/home#service"
@@ -55,7 +57,7 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <HashLink
-                                    className="nav-link active text-white
+                                    className="nav-link active 
                                 link-hover"
                                     aria-current="page"
                                     to="/home#service"
@@ -66,7 +68,7 @@ const Header = () => {
 
                             <li className="nav-item">
                                 <Link
-                                    className="nav-link active text-white
+                                    className="nav-link active 
                                 link-hover"
                                     aria-current="page"
                                     to="/contact"
@@ -77,7 +79,7 @@ const Header = () => {
 
                             {user?.email ? (
                                 <button
-                                    className="btn btn-danger fw-bolder rounded"
+                                    className="btn btn-danger fw-bolder rounded pt-2 mx-1"
                                     onClick={logOut}
                                 >
                                     Log Out
@@ -85,14 +87,14 @@ const Header = () => {
                             ) : (
                                 <li className="nav-item">
                                     <Link to="/login">
-                                        <button className="btn btn-success fw-bolder rounded mt-1">
+                                        <button className="btn btn-success fw-bolder rounded  pt-2 mx-1">
                                             Sign In
                                         </button>
                                     </Link>
                                 </li>
                             )}
                             {user?.email && (
-                                <li className="nav-item text-white p-2">{user.email}</li>
+                                <li className="nav-item  pt-2">{user.displayName}</li>
                             )}
                         </ul>
                     </div>

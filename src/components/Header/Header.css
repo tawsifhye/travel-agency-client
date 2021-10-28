@@ -1,8 +1,24 @@
 .self-nav {
-    background-color: rgba(0, 0, 0, 0.158);
+    /* background-color: rgba(0, 0, 0, 0.158); */
 }
 
 .link-hover:hover {
-    color: yellow !important;
-    text-decoration: underline;
+    border-bottom: 5px solid #4657F0;
+    background-color: #E8E9EB;
+    /* color: yellow !important; */
+    /* text-decoration: underline; */
+}
+
+.link-hover:active {
+    border-bottom: 5px solid red;
+    background-color: #E8E9EB;
+    /* color: yellow !important; */
+    /* text-decoration: underline; */
+}
+
+.link-hover:visited {
+    border-bottom: 5px solid #4657F0;
+    background-color: #E8E9EB;
+    /* color: yellow !important; */
+    /* text-decoration: underline; */
 }
