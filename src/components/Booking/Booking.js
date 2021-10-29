@@ -11,7 +11,7 @@ const Booking = () => {
     const { _id } = useParams();
     const [tour, setTour] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/tourplans/${_id}`)
+        fetch(`https://young-crag-40635.herokuapp.com/tourplans/${_id}`)
             .then(res => res.json())
             .then(data => setTour(data))
     }, [])
@@ -23,7 +23,7 @@ const Booking = () => {
             status: 'pending'
         };
         console.log(bookingInfo);
-        axios.post('http://localhost:5000/bookedevents', bookingInfo)
+        axios.post('https://young-crag-40635.herokuapp.com/bookedevents', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Event Booking Successful. Visit My Bookings for updated.');

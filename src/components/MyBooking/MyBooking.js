@@ -10,14 +10,14 @@ const MyBooking = () => {
     const [events, setEvents] = useState([]);
     const email = user.email;
     useEffect(() => {
-        fetch(`http://localhost:5000/bookedevents/${email}`)
+        fetch(`https://young-crag-40635.herokuapp.com/bookedevents/${email}`)
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [email, isdeleted])
     const deleteEvent = (id) => {
         const proceed = window.confirm('Cancel Booking!Are you sure?');
         if (proceed) {
-            fetch(`http://localhost:5000/bookedevents/${id}`, {
+            fetch(`https://young-crag-40635.herokuapp.com/bookedevents/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
