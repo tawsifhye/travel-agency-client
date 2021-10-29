@@ -33,24 +33,27 @@
 }
 
 .custom-font-home h1 {
-    font-size: 5rem;
+    font-size: 6vw;
 }
 
 .custom-font-home p {
-    font-size: 1.3rem;
+    font-size: 1.6vw;
 }
 
 .service-container{
     margin-top: 10%;
-    padding: 5%;
     background-color:#FAFAFA ;
+}
+.service-container-header{
+    padding:5% 5% 0 5%;
+    
 }
 
 .service-container .custom-font-home h1 {
-    font-size: 3rem;
+    font-size: 4vw;
     font-weight: lighter;
 }
 .service-container .custom-font-home p {
-    font-size: 1.1rem;
+    font-size: 1.4vw;
     font-weight: lighter;
 }

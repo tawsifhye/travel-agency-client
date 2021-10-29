@@ -14,7 +14,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='service-container' id="service">
-                <div className="text-center custom-font-home">
+                <div className="text-center service-container-header custom-font-home">
                     <h1 className="">
                         Popular Destination
                     </h1>
@@ -23,7 +23,7 @@ const Home = () => {
                     </p>
                 </div>
                 <div
-                    className="container-fluid row mx-auto service-container"
+                    className="container-fluid row mx-auto"
                 >
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-5 mx-auto">
                         <Service></Service>
