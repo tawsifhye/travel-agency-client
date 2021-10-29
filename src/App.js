@@ -8,6 +8,7 @@ import NotFound from "./components/NotFound/NotFound"
 import Home from "./components/Home/Home";
 import Booking from "./components/Booking/Booking";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import MyBooking from "./components/MyBooking/MyBooking";
 
 function App() {
 
@@ -26,6 +27,9 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <PrivateRoute path='/mybooking'>
+              <MyBooking></MyBooking>
+            </PrivateRoute>
             <PrivateRoute path='/booking/:_id'>
               <Booking></Booking>
             </PrivateRoute>
@@ -33,7 +37,6 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
-          <Footer></Footer>
         </Router>
       </AuthProvider>
 

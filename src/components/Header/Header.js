@@ -56,16 +56,19 @@ const Header = () => {
                                     Tour Plans
                                 </HashLink>
                             </li>
-                            <li className="nav-item me-3">
-                                <HashLink
-                                    className="nav-link active 
+                            {user.email && (
+                                <li className="nav-item me-3">
+                                    <Link
+                                        className="nav-link active 
                                 link-hover"
-                                    aria-current="page"
-                                    to="/home#service"
-                                >
-                                    My Bookings
-                                </HashLink>
-                            </li>
+                                        aria-current="page"
+                                        to="/mybooking"
+                                    >
+                                        My Booking
+                                    </Link>
+                                </li>
+                            )}
+
                             {/* <li className="nav-item">
                                 <HashLink
                                     className="nav-link active 
@@ -73,7 +76,7 @@ const Header = () => {
                                     aria-current="page"
                                     to="/home#service"
                                 >
-                                    Manage All Bookings
+                                    Manage All Booking
                                 </HashLink>
                             </li>
 

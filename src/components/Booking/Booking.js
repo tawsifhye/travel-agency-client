@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
+import Footer from '../Footer/Footer';
 import './Booking.css'
 const Booking = () => {
     const { user } = useAuth();
@@ -18,13 +19,14 @@ const Booking = () => {
         const bookingInfo = {
             ...data,
             title: tour.title,
-            email: user.email
+            email: user.email,
+            status: 'pending'
         };
         console.log(bookingInfo);
         axios.post('http://localhost:5000/bookedevents', bookingInfo)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('Event Booking Successful. Visit My Bookings for updated');
+                    alert('Event Booking Successful. Visit My Bookings for updated.');
                     reset();
                 }
             })
@@ -61,12 +63,13 @@ const Booking = () => {
                                 <p className="fw-bolder">To</p>
                                 <input type='date' {...register("endDate")} />
                                 <br /> <br />
-                                <input className='pt-' type="submit" />
+                                <input className='btn btn-secondary fw-bolder' type="submit" />
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Footer from '../Footer/Footer';
 import Service from '../Service/Service'
 import './Home.css'
 const Home = () => {
@@ -40,6 +41,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </>
     );
 };
