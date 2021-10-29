@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service'
 import './Home.css'
 const Home = () => {
+    const [tours, setTours] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/tourplans')
+            .then(res => res.json())
+            .then(data => setTours(data))
+    }, [])
+    console.log(tours);
     return (
         <>
             <div className="home-banner-container">
@@ -22,11 +29,14 @@ const Home = () => {
                         We love to tell our successful far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                     </p>
                 </div>
-                <div
-                    className="container-fluid row mx-auto"
-                >
+                <div className="container-fluid row mx-auto">
+                    {!tours && (<div className="text-center">
+                        <div class="spinner-grow text-danger text-center" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>)}
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-5 mx-auto">
-                        <Service></Service>
+                        {tours.map(tour => (<Service key={tour._id} tour={tour}></Service>))}
                     </div>
                 </div>
             </div>

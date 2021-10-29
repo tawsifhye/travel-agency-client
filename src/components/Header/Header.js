@@ -6,10 +6,10 @@ import logo from '../../images/logo.jpg'
 import "./Header.css"
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
+    // console.log(user);
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light sticky-top self-navbar  self-nav">
+            <nav className="navbar navbar-expand-lg navbar-light self-navbar">
                 <div className="container w-50 ms-0 ps-3">
                     <Link to="/home">
                         <img
@@ -53,7 +53,7 @@ const Header = () => {
                                     aria-current="page"
                                     to="/home#service"
                                 >
-                                    Our Tours
+                                    Tour Plans
                                 </HashLink>
                             </li>
                             <li className="nav-item">

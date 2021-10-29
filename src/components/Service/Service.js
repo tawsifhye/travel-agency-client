@@ -1,19 +1,21 @@
 import React from 'react';
-
-const Services = () => {
+import { Link } from 'react-router-dom';
+import './service.css'
+const Services = (props) => {
+    const { _id, title, price, thumb } = props.tour;
     return (
         <>
             <div className="col">
-                <div className="card h-100 card-design border-dark p-1 rounded">
-                    <img src='{thumb}' className="card-img-top img-fluid" alt="..." />
+                <div className="card card-design border-dark p-1 rounded">
+                    <img src={thumb} className="card-img-top img-fluid" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title text-center fw-bold">title</h5>
-                        <p>description</p>
+                        <h5 className="card-title text-center fw-bold">{title}</h5>
+                        <p className="text-center fw-bold">${price}</p>
                     </div>
                     <div className="mx-auto pb-2">
-                        {/* <Link to={`/details/${_id}`}>
-              <button className="btn btn-dark fw-bold">Details</button>
-            </Link> */}
+                        <Link to={`/details/${_id}`}>
+                            <button className="fw-bold btn btn-warning rounded-pill">Book Tour</button>
+                        </Link>
                     </div>
                 </div>
             </div>
