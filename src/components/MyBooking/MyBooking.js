@@ -6,20 +6,38 @@ import Footer from '../Footer/Footer';
 import './MyBooking.css'
 const MyBooking = () => {
     const { user } = useAuth();
+    const [isdeleted, setIsDeleted] = useState(false);
     const [events, setEvents] = useState([]);
     const email = user.email;
     useEffect(() => {
         fetch(`http://localhost:5000/bookedevents/${email}`)
             .then(res => res.json())
             .then(data => setEvents(data))
-    }, [email])
+    }, [email, isdeleted])
     const deleteEvent = (id) => {
-        console.log(id);
+        const proceed = window.confirm('Cancel Booking!Are you sure?');
+        if (proceed) {
+            fetch(`http://localhost:5000/bookedevents/${id}`, {
+                method: "DELETE"
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.acknowledged) {
+                        alert('Delete Successful!')
+                        setIsDeleted(true);
+                    }
+                })
+        }
     }
     return (
         <div className='mybooking-container'>
             <div className='text-center main-container mybooking-custom-font'>
-                <h1>Manage Your Booking</h1>
+                <h1 className="p-4">Manage Your Booking</h1>
+                {!events && (<div className="text-center">
+                    <div class="spinner-grow text-danger text-center" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>)}
                 {events.map(event => <div key={event._id} className="shadow-sm p-3 mb-5 bg-body rounded">
                     <h5>{event.title}</h5>
                     <p>Name: {event.name}</p>
