@@ -2,6 +2,8 @@
     background-color: #FBDF69;
 }
 
+.custom-font-booking {}
+
 .custom-font-booking h3 {
     font-size: 200%;
     border-left: 5px solid orangered;
@@ -9,4 +11,12 @@
 
 .custom-font-booking p {
     font-size: 100%
+}
+
+.booking-img-design img {
+    height: 30em;
+}
+
+.form-container {
+    height: 100vh;
 }
