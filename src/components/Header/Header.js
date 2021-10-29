@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.png'
 import "./Header.css"
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light self-nav">
-                <div className="container w-25 ms-0">
+                <div className="container px-0 w-25 ms-0">
                     <Link to="/home">
                         <img
                             className="rounded-circle"

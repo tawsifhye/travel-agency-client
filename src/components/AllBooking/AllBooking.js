@@ -30,7 +30,7 @@ const AllBooking = () => {
         const updatedStatus = {
             status: 'approved'
         }
-        axios.put(`http://localhost:5000/bookedevents/${id}`, {
+        axios.put(`https://young-crag-40635.herokuapp.com/bookedevents/${id}`, {
             status: 'approved'
         })
             .then(res => {
