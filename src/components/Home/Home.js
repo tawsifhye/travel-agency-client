@@ -8,7 +8,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setTours(data))
     }, [])
-    console.log(tours);
+    // console.log(tours);
     return (
         <>
             <div className="home-banner-container">

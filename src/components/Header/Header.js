@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light self-navbar">
-                <div className="container w-50 ms-0 ps-3">
+                <div className="container w-25 ms-0 ps-3">
                     <Link to="/home">
                         <img
                             className="rounded-circle"
@@ -33,9 +33,9 @@ const Header = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="container-fluid d-flex">
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto pe-lg-5 mb-2 mb-lg-0 fw-bold fs-6">
-                            <li className="nav-item">
+                    <div className="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                        <ul className="navbar-nav  pe-lg-5 mb-2 mb-lg-0 fw-bold fs-6">
+                            <li className="nav-item me-3">
                                 <HashLink
                                     className="nav-link active 
                                 link-hover"
@@ -46,7 +46,7 @@ const Header = () => {
                                 </HashLink>
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item me-3">
                                 <HashLink
                                     className="nav-link active 
                                 link-hover"
@@ -56,7 +56,7 @@ const Header = () => {
                                     Tour Plans
                                 </HashLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item me-3">
                                 <HashLink
                                     className="nav-link active 
                                 link-hover"
@@ -105,7 +105,7 @@ const Header = () => {
                                 </li>
                             )}
                             {user?.email && (
-                                <li className="nav-item  pt-2">{user.displayName}</li>
+                                <li className="nav-item  pt-2">Signed in as: {user.displayName}</li>
                             )}
                         </ul>
                     </div>

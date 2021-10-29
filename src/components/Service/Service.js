@@ -6,14 +6,14 @@ const Services = (props) => {
     return (
         <>
             <div className="col">
-                <div className="card card-design border-dark p-1 rounded">
+                <div className="card card-design border-dark rounded">
                     <img src={thumb} className="card-img-top img-fluid" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title text-center fw-bold">{title}</h5>
+                        <h5 className="card-title text-center fw-bold">{title.toUpperCase()}</h5>
                         <p className="text-center fw-bold">${price}</p>
                     </div>
                     <div className="mx-auto pb-2">
-                        <Link to={`/details/${_id}`}>
+                        <Link to={`/booking/${_id}`}>
                             <button className="fw-bold btn btn-warning rounded-pill">Book Tour</button>
                         </Link>
                     </div>

@@ -1,0 +1,12 @@
+.booking-container {
+    background-color: #FBDF69;
+}
+
+.custom-font-booking h3 {
+    font-size: 200%;
+    border-left: 5px solid orangered;
+}
+
+.custom-font-booking p {
+    font-size: 100%
+}

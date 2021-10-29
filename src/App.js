@@ -6,6 +6,8 @@ import AuthProvider from "./Context/AuthProvider";
 import Login from "./components/Login/Login";
 import NotFound from "./components/NotFound/NotFound"
 import Home from "./components/Home/Home";
+import Booking from "./components/Booking/Booking";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
 
@@ -24,6 +26,9 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <PrivateRoute path='/booking/:_id'>
+              <Booking></Booking>
+            </PrivateRoute>
             <Route path='*'>
               <NotFound></NotFound>
             </Route>
