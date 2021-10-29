@@ -9,6 +9,7 @@ import Home from "./components/Home/Home";
 import Booking from "./components/Booking/Booking";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import MyBooking from "./components/MyBooking/MyBooking";
+import AllBooking from "./components/AllBooking/AllBooking";
 
 function App() {
 
@@ -27,8 +28,11 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <PrivateRoute path='/mybooking'>
+            <PrivateRoute path='/mybookings'>
               <MyBooking></MyBooking>
+            </PrivateRoute>
+            <PrivateRoute path='/allbookings'>
+              <AllBooking></AllBooking>
             </PrivateRoute>
             <PrivateRoute path='/booking/:_id'>
               <Booking></Booking>
@@ -37,6 +41,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
 

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
-import Footer from '../Footer/Footer';
 import './Booking.css'
 const Booking = () => {
     const { user } = useAuth();
@@ -69,7 +68,6 @@ const Booking = () => {
                     </div>
                 </div>
             </div>
-            <Footer></Footer>
         </div>
     );
 };

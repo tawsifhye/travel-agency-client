@@ -9,8 +9,8 @@ const Header = () => {
     // console.log(user);
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light self-navbar">
-                <div className="container w-25 ms-0 ps-3">
+            <nav className="navbar navbar-expand-lg navbar-light self-nav">
+                <div className="container w-25 ms-0">
                     <Link to="/home">
                         <img
                             className="rounded-circle"
@@ -62,9 +62,21 @@ const Header = () => {
                                         className="nav-link active 
                                 link-hover"
                                         aria-current="page"
-                                        to="/mybooking"
+                                        to="/mybookings"
                                     >
-                                        My Booking
+                                        My Bookings
+                                    </Link>
+                                </li>
+                            )}
+                            {user.email && (
+                                <li className="nav-item me-3">
+                                    <Link
+                                        className="nav-link active 
+                                link-hover"
+                                        aria-current="page"
+                                        to="/allbookings"
+                                    >
+                                        Manage All Bookings
                                     </Link>
                                 </li>
                             )}

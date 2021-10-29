@@ -2,7 +2,6 @@ import { faEraser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../hooks/useAuth';
-import Footer from '../Footer/Footer';
 import './MyBooking.css'
 const MyBooking = () => {
     const { user } = useAuth();
@@ -31,7 +30,7 @@ const MyBooking = () => {
     }
     return (
         <div className='mybooking-container'>
-            <div className='text-center main-container mybooking-custom-font'>
+            <div className='text-center mybooking-main-container mybooking-custom-font'>
                 <h1 className="p-4">Manage Your Booking</h1>
                 {!events && (<div className="text-center">
                     <div class="spinner-grow text-danger text-center" role="status">
@@ -48,7 +47,6 @@ const MyBooking = () => {
                     <button onClick={() => deleteEvent(event._id)} className="btn btn-danger"><FontAwesomeIcon icon={faEraser} /> Cancel</button>
                 </div>)}
             </div>
-            <Footer></Footer>
         </div>
     );
 };
