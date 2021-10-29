@@ -1,0 +1,56 @@
+.home-banner {
+    background-image: url(../../images/home_bannar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    /* height: 50vh; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.home-banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.home-banner h1 {
+    position: relative;
+    line-height: 0.9;
+
+}
+
+.custom-font-home h1 {
+    font-size: 5rem;
+}
+
+.custom-font-home p {
+    font-size: 1.3rem;
+}
+
+.service-container{
+    margin-top: 10%;
+    padding: 5%;
+    background-color:#FAFAFA ;
+}
+
+.service-container .custom-font-home h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.service-container .custom-font-home p {
+    font-size: 1.1rem;
+    font-weight: lighter;
+}

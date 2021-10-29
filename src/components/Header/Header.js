@@ -45,6 +45,17 @@ const Header = () => {
                                     Home
                                 </HashLink>
                             </li>
+
+                            <li className="nav-item">
+                                <HashLink
+                                    className="nav-link active 
+                                link-hover"
+                                    aria-current="page"
+                                    to="/home#service"
+                                >
+                                    Our Tours
+                                </HashLink>
+                            </li>
                             <li className="nav-item">
                                 <HashLink
                                     className="nav-link active 
@@ -55,14 +66,14 @@ const Header = () => {
                                     My Bookings
                                 </HashLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <HashLink
                                     className="nav-link active 
                                 link-hover"
                                     aria-current="page"
                                     to="/home#service"
                                 >
-                                    Services
+                                    Manage All Bookings
                                 </HashLink>
                             </li>
 
@@ -73,9 +84,9 @@ const Header = () => {
                                     aria-current="page"
                                     to="/contact"
                                 >
-                                    Contact Us
+                                    Add Tours
                                 </Link>
-                            </li>
+                            </li> */}
 
                             {user?.email ? (
                                 <button

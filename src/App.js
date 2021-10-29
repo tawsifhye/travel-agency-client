@@ -5,14 +5,22 @@ import Footer from './components/Footer/Footer';
 import AuthProvider from "./Context/AuthProvider";
 import Login from "./components/Login/Login";
 import NotFound from "./components/NotFound/NotFound"
+import Home from "./components/Home/Home";
 
 function App() {
+
   return (
     <div className="">
       <AuthProvider>
         <Router>
           <Header></Header>
           <Switch>
+            <Route exact path='/'>
+              <Home></Home>
+            </Route>
+            <Route path='/home'>
+              <Home></Home>
+            </Route>
             <Route path='/login'>
               <Login></Login>
             </Route>
