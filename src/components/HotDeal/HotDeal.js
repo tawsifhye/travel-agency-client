@@ -1,6 +1,5 @@
 import React from 'react';
 import hotdeals from '../../images/hot-deals.png'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HotDeal.css"
 import { HashLink } from 'react-router-hash-link';
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service'
 import HotDeal from '../HotDeal/HotDeal'
+import Bounce from 'react-reveal/Bounce';
+import Slide from 'react-reveal/Slide';
 import './Home.css'
 const Home = () => {
     const [tours, setTours] = useState([]);
@@ -37,15 +39,20 @@ const Home = () => {
                             <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>)}
-                    <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-5 mx-auto">
-                        {tours.map(tour => (<Service key={tour._id} tour={tour}></Service>))}
-                    </div>
+                    <Bounce bottom>
+                        <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-5 mx-auto">
+                            {tours.map(tour => (<Service key={tour._id} tour={tour}></Service>))}
+                        </div>
+                    </Bounce>
                 </div>
             </div>
             {/* service Section Ends */}
-            <div className="pt-5 mt-5">
-                <HotDeal></HotDeal>
-            </div>
+            <Slide left>
+                <div className="pt-5 mt-5">
+                    <HotDeal></HotDeal>
+                </div>
+            </Slide>
+
             {/* Hot Deal Section */}
         </>
     );
