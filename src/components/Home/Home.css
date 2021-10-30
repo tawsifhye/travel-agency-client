@@ -31,72 +31,36 @@
 }
 
 .custom-font-home h1 {
-    font-size: 6vw;
+    /* font-size: 6vw; */
+    font-size: 500%;
 }
 
 .custom-font-home p {
-    font-size: 1.6vw;
+    font-size: 160%;
 }
 
-.service-container{
+.service-container {
     margin-top: 10%;
-    background-color:#FAFAFA ;
+    background-color: #FAFAFA;
 }
-.service-container-header{
-    padding:5% 5% 0 5%;
-    
+
+.service-container-header {
+    padding: 5% 5% 0 5%;
+
 }
 
 .service-container .custom-font-home h1 {
-    font-size: 4vw;
+    font-size: 350%;
     font-weight: lighter;
 }
+
 .service-container .custom-font-home p {
-    font-size: 1.4vw;
+    font-size: 140%;
     font-weight: lighter;
 }
 
 @media (max-width: 940px) {
-    .home-banner{
+    .home-banner {
         height: 300px;
-    }
-}
-@media (max-width: 940px) {
-    .home-banner{
-        height: 300px;
-    }
-    .custom-font-home h1 {
-        font-size: 7vw;
-    }
-    
-    .custom-font-home p {
-        font-size: 1.8vw;
-    }
-}
-
-@media (max-width: 600px){
-
-    .custom-font-home h1 {
-        font-size: 7vw;
-    }
-    
-    .custom-font-home p {
-        font-size: 2vw;
-    }
-
-    .service-container .custom-font-home h1 {
-        font-size: 7vw;
-    }
-    .service-container .custom-font-home p {
-        font-size: 2.2vw;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 750px) {
-    .service-container .custom-font-home h1 {
-        font-size: 5vw;
-    }
-    .service-container .custom-font-home p {
-        font-size: 1.8vw;
     }
 }

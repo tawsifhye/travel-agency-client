@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service'
+import HotDeal from '../HotDeal/HotDeal'
 import './Home.css'
 const Home = () => {
     const [tours, setTours] = useState([]);
@@ -20,6 +21,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* Service Section Starts*/}
             <div className='service-container' id="service">
                 <div className="text-center service-container-header custom-font-home">
                     <h1 className="">
@@ -40,6 +42,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            {/* service Section Ends */}
+            <div className="hot-deal-caontainer">
+                <HotDeal></HotDeal>
+            </div>
+            {/* Hot Deal Section */}
         </>
     );
 };
