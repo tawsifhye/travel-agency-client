@@ -11,8 +11,8 @@ const Review = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1
     };
@@ -28,7 +28,7 @@ const Review = () => {
                         <Slider {...settings} className="slider text-center">
 
                             <div class="card review-card p-3">
-                                <img src={person1} class="card-img-top w-50 mx-auto pt-5 client-card-image" alt="..." />
+                                <img src={person1} class="card-img-top w-75 mx-auto pt-5 client-card-image" alt="..." />
                                 <div class="card-body pt-5">
                                     <h3>Jhon Doe</h3>
                                     <h6>Tour Guide</h6>
@@ -37,7 +37,7 @@ const Review = () => {
                             </div>
 
                             <div class="card review-card p-3">
-                                <img src={person2} class="card-img-top w-50 mx-auto pt-5 client-card-image" alt="..." />
+                                <img src={person2} class="card-img-top w-75 mx-auto pt-5 client-card-image" alt="..." />
                                 <div class="card-body pt-5">
                                     <h3>Tony Stark</h3>
                                     <h6>Designer at Freepik</h6>
@@ -45,7 +45,7 @@ const Review = () => {
                                 </div>
                             </div>
                             <div class="card p-3">
-                                <img src={person3} class="card-img-top w-50 mx-auto pt-5 client-card-image " alt="..." />
+                                <img src={person3} class="card-img-top w-75 mx-auto pt-5 client-card-image " alt="..." />
                                 <div class="card-body pt-5">
                                     <h3>Rob Smith</h3>
                                     <h6>Manager</h6>

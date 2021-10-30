@@ -32,11 +32,11 @@
 
 .custom-font-home h1 {
     /* font-size: 6vw; */
-    font-size: 500%;
+    font-size: 450%;
 }
 
 .custom-font-home p {
-    font-size: 160%;
+    font-size: 130%;
 }
 
 .service-container {
@@ -50,12 +50,12 @@
 }
 
 .service-container .custom-font-home h1 {
-    font-size: 350%;
+    font-size: 300%;
     font-weight: lighter;
 }
 
 .service-container .custom-font-home p {
-    font-size: 140%;
+    font-size: 110%;
     font-weight: lighter;
 }
 
