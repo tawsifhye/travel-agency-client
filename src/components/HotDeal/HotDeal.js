@@ -1,5 +1,4 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
 import hotdeals from '../../images/hot-deals.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HotDeal.css"
