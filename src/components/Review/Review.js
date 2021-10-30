@@ -20,10 +20,10 @@ const Review = () => {
         <>
             <div className="mb-5 review-container">
                 <div className="row mt-5">
-                    <div className="col-6 p-3">
-                        <div className="review-container-text">
-                            <h2 className="text-center"> Happy Client</h2>
-                            <h1 className="text-center">Testimonial</h1>
+                    <div className="col-lg-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 p-3">
+                        <div className="review-container-text text-center">
+                            <h2> Happy Client</h2>
+                            <h1>Testimonial</h1>
                         </div>
                         <Slider {...settings} className="slider text-center">
                             <div class="card  p-3">
@@ -53,10 +53,10 @@ const Review = () => {
 
                         </Slider>
                     </div>
-                    <div className="col-6">
-                        <div className="review-container-text">
+                    <div className="col-lg-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                        <div className="review-container-text text-center">
                             <h2 className="mt-3">FAQ</h2>
-                            <h1 className="display-5">Frequently Asked Questions</h1>
+                            <h1>Frequently Asked Questions</h1>
                         </div>
                         <div class="p-4">
                             <div class="accordion accordion-flush" id="accordionFlushExample">
