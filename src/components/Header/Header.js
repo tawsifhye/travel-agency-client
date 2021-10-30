@@ -81,27 +81,9 @@ const Header = () => {
                                 </li>
                             )}
 
-                            {/* <li className="nav-item">
-                                <HashLink
-                                    className="nav-link active 
-                                link-hover"
-                                    aria-current="page"
-                                    to="/home#service"
-                                >
-                                    Manage All Booking
-                                </HashLink>
-                            </li>
-
-                            <li className="nav-item">
-                                <Link
-                                    className="nav-link active 
-                                link-hover"
-                                    aria-current="page"
-                                    to="/contact"
-                                >
-                                    Add Tours
-                                </Link>
-                            </li> */}
+                            {user?.email && (
+                                <li className="nav-item  pt-2"><span className="text-success">Signed in as: </span>{user.displayName}</li>
+                            )}
 
                             {user?.email ? (
                                 <button
@@ -119,9 +101,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                             )}
-                            {user?.email && (
-                                <li className="nav-item  pt-2">Signed in as: {user.displayName}</li>
-                            )}
+
                         </ul>
                     </div>
                 </div>
