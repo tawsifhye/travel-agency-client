@@ -15,12 +15,18 @@
 }
 
 .review-container-text h1 {
-    font-size: 350%;
+    font-size: 300%;
     color: #4A4A4A;
     font-weight: bolder;
 }
 
 .review-container-text h2 {
     color: orangered;
-    font-size: 220%;
+    font-size: 200%;
+}
+
+.client-card-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
