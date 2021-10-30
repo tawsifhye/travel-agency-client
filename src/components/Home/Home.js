@@ -4,6 +4,7 @@ import HotDeal from '../HotDeal/HotDeal'
 import Bounce from 'react-reveal/Bounce';
 import Slide from 'react-reveal/Slide';
 import './Home.css'
+import Review from '../Review/Review';
 const Home = () => {
     const [tours, setTours] = useState([]);
     useEffect(() => {
@@ -47,13 +48,20 @@ const Home = () => {
                 </div>
             </div>
             {/* service Section Ends */}
-            <Slide left>
-                <div className="pt-5 mt-5">
-                    <HotDeal></HotDeal>
-                </div>
-            </Slide>
-
-            {/* Hot Deal Section */}
+            {/* Hot Deal Section Starts */}
+            <div className="mb-5">
+                <Slide left>
+                    <div className="pt-5 mt-5">
+                        <HotDeal></HotDeal>
+                    </div>
+                </Slide>
+            </div>
+            {/* Hot Deal Section Ends */}
+            {/* User Review Section Starts */}
+            <div className="mt-5">
+                <Review></Review>
+            </div>
+            {/* User Review Section Ends */}
         </>
     );
 };

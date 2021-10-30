@@ -1,0 +1,26 @@
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+    color: orangered !important;
+}
+
+.review-container {
+    width: 90%;
+    margin-top: 5%;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.review-container-text h1 {
+    font-size: 350%;
+    color: #4A4A4A;
+    font-weight: bolder;
+}
+
+.review-container-text h2 {
+    color: orangered;
+    font-size: 220%;
+}
