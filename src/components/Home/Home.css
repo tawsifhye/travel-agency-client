@@ -59,6 +59,8 @@
     font-weight: lighter;
 }
 
+
+
 @media (max-width: 940px) {
     .home-banner {
         height: 300px;

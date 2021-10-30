@@ -1,0 +1,13 @@
+.hot-deal-container {
+    background-color: rgba(39, 35, 35, 0.795);
+}
+
+
+.custom-font-hotdeal h1 {
+    font-size: 300%;
+}
+
+.custom-font-hotdeal span {
+    color: #FDDB00;
+    font-size: 300%;
+}

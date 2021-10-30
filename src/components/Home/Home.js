@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
             </div>
             {/* service Section Ends */}
-            <div className="hot-deal-caontainer">
+            <div className="pt-5 mt-5">
                 <HotDeal></HotDeal>
             </div>
             {/* Hot Deal Section */}
