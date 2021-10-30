@@ -51,8 +51,8 @@ const AllBooking = () => {
                             <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>)}
-                    <div className='p-4'>
-                        <table className="mx-auto table table-dark table-striped">
+                    <div className='p-4 table-responsive'>
+                        <table className="mx-auto table table-hover table-dark table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>

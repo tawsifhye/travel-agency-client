@@ -6,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 import './Booking.css'
 const Booking = () => {
     const { user } = useAuth();
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset, required } = useForm();
     const { _id } = useParams();
     const [tour, setTour] = useState({});
     useEffect(() => {
@@ -54,15 +54,15 @@ const Booking = () => {
                         <div className="d-flex lex-column justify-content-center align-items-center form-container">
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <p className="fw-bolder">Name</p>
-                                <input type='text' {...register("name")} />
+                                <input defaultValue={user.displayName} type='text' {...register("name")} required />
                                 <p className="fw-bolder">Contact No</p>
-                                <input type='' {...register("contact")} />
+                                <input type='text'{...register("contact")} required />
                                 <p className="fw-bolder">From</p>
-                                <input type='date' {...register("startDate")} />
+                                <input type='date' {...register("startDate")} required />
                                 <p className="fw-bolder">To</p>
-                                <input type='date' {...register("endDate")} />
+                                <input type='date' {...register("endDate")} required />
                                 <br /> <br />
-                                <input className='btn btn-secondary fw-bolder' type="submit" />
+                                <input className='' type="submit" />
                             </form>
                         </div>
                     </div>

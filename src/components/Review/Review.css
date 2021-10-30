@@ -5,13 +5,21 @@
 }
 
 .review-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     width: 90%;
     margin-top: 5%;
+}
+
+.review-main {
+    flex: 1
 }
 
 .slider {
     margin: 0 auto;
     width: 75%;
+
 }
 
 .review-container-text h1 {
@@ -27,4 +35,6 @@
 
 .client-card-image {
     border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
 }
