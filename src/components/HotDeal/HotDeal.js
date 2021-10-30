@@ -3,6 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import hotdeals from '../../images/hot-deals.png'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./HotDeal.css"
+import { HashLink } from 'react-router-hash-link';
 
 const HotDeal = () => {
     return (
@@ -13,6 +14,9 @@ const HotDeal = () => {
                     <div className="p-3">
                         <h4>Just hurry up limited offer!</h4>
                         <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <HashLink to="/home#service">
+                            <button className="btn btn-warning rounded-pill">Book Now</button>
+                        </HashLink>
                     </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-5 text-center">
