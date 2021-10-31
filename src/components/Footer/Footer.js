@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='footer p-5'>
                 <div className="container text-white">
                     <div className="row pt-2 mx-auto">
-                        <div className="col-4" id="aboutus">
+                        <div className="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4" id="aboutus">
                             <div className="d-flex align-items-center">
                                 <h6 >About Us</h6>
                                 <img className="w-25" src={logo} alt="" />
@@ -24,21 +24,21 @@ const Footer = () => {
                                 <FontAwesomeIcon className="me-2" icon={faPinterest} />
                             </div>
                         </div>
-                        <div className="col-2">
+                        <div className="col-12 col-sm-12 col-lg-2 col-xl-2 col-xxl-2">
                             <h6>Links</h6>
                             <p>Services</p>
                             <p>Career</p>
                             <p>News</p>
                             <p>Contact</p>
                         </div>
-                        <div className="col-2">
+                        <div className="col-12 col-sm-12 col-lg-2 col-xl-2 col-xxl-2">
                             <h6>Company</h6>
                             <p>Services</p>
                             <p>Career</p>
                             <p>News</p>
                             <p>Contact</p>
                         </div>
-                        <div className="col-4">
+                        <div className="col-12 col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
                             <h6>Contact</h6>
                             <p>Sylhet Bangladesh</p>
                             <p>+1(123)-456-7890</p>
