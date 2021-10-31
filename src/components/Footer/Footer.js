@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="text-white text-white text-center">
                     <p>Copyright ©2021 All rights reserved Tawsif</p>
                     <small>This web site is developed for leaning purpose</small> <br />
-                    <small>Images are collected from freepik, unsplas, pexel. And texts are collected from different website.</small>
+                    <small>Images are collected from freepik, unsplash, pexels website. And texts are collected from different website.</small>
                 </div>
             </div>
         </div>
