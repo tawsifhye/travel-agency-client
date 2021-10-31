@@ -47,8 +47,11 @@ const Footer = () => {
 
                     </div>
                 </div>
-                {/* <p className='text-white text-center'>Copyright ©2021 All rights reserved Tawsif
-                </p> */}
+                <div className="text-white text-white text-center">
+                    <p className=''>Copyright ©2021 All rights reserved Tawsif</p>
+                    <small>This web site is developed for leaning purpose</small> <br />
+                    <small>Images are collected from freepik, unsplas, pexel. And texts are collected from different website.</small>
+                </div>
             </div>
         </div>
     );
