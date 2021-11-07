@@ -3,7 +3,7 @@
 React Single Page Application for Travel related business
 
 ## Live Site 
-Open [Travel Agency](http://localhost:3000) to view it in the browser.
+Open [Travel Agency](https://travel-agency-b8391.web.app/) to view it in the browser.
 
 ## Features
 - Google Sign In.
